@@ -7,12 +7,12 @@
 #   automatic_name: true
 #   link: https://996.icu
 -
-  icon: /assets/img/acgn/Asuka.ico
+  icon: /assets/img/acgn/github.svg
   use_iconfont: true
   name: 此博客的 Github 仓库
   link: https://github.com/L1nwz1/L1nwz1.github.io
 -
-  icon: /assets/img/acgn/meiboli.ico
+  icon: /assets/img/acgn/bilibili.svg
   use_iconfont: true
   name: 此博客的 Bilibili 主页
   link: https://space.bilibili.com/22519503
