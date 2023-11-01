@@ -6,6 +6,17 @@
 #   # 为 true 时当且仅当图片无法加载时，使用名字替代。为 false 时始终显示名字。
 #   automatic_name: true
 #   link: https://996.icu
+-
+  icon: /assets/acgn/Asuka.jpg
+  use_iconfont: true
+  name: 此博客的 Github 仓库
+  link: https://github.com/L1nwz1/L1nwz1.github.io
+-
+  icon: icon-nihil-github
+  use_iconfont: true
+  name: nihil的个人博客
+  link: https://nihil.cc/
+
 # 在下面添加更多外部链接
 # -
 #   icon: 
