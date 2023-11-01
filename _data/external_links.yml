@@ -7,12 +7,17 @@
 #   automatic_name: true
 #   link: https://996.icu
 -
-  icon: /assets/acgn/Asuka.jpg
+  icon: /assets/img/acgn/Asuka.ico
   use_iconfont: true
   name: 此博客的 Github 仓库
   link: https://github.com/L1nwz1/L1nwz1.github.io
 -
-  icon: icon-nihil-github
+  icon: /assets/img/acgn/meiboli.ico
+  use_iconfont: true
+  name: 此博客的 Bilibili 主页
+  link: https://space.bilibili.com/22519503
+-
+  icon: /assets/img/acgn/bailu.ico
   use_iconfont: true
   name: nihil的个人博客
   link: https://nihil.cc/
