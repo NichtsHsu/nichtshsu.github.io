@@ -5,14 +5,15 @@
 
 - type: weibo
   icon: "iconfont icon-weibo"
+  url: "https://weibo.com/u/5460836337"
 
-- type: qq
-  icon: "iconfont icon-qq"
+- type: email
+  icon: "iconfont icon-mail"
   noblank: true # 在当前页面打开链接
 
-# - type: rss
-#   icon: "iconfont icon-rss"
-#   noblank: true
+- type: rss
+  icon: "iconfont icon-rss"
+  noblank: true
 
 # 取消注释并完善下列链接以启用更多联系方式
 # - type: mastodon

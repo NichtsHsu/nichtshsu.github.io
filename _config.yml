@@ -29,9 +29,6 @@ author: L1nwz1 # 全名
 github:
   username: L1nwz1 # Github 用户名
 
-weibo:
-  username: 喜多kita-
-
 social:
   # 改为你的全名。
   # 这将会显示为帖子的默认作者以及页脚的版权所有者
@@ -100,7 +97,7 @@ panel:
     toc: true
 
 comments:
-  active: # 帖子评论区全局开关，例如，'disqus'。保持为空表示禁用
+  active:  # 帖子评论区全局开关，例如，'disqus'。保持为空表示禁用
   # active 选项可以是如下：
   # disqus 评论系统 > https://disqus.com/
   disqus:
