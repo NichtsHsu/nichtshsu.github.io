@@ -111,7 +111,7 @@ comments:
   # Waline 评论系统 › https://waline.js.org/
   waline:
     server: # Vercal 服务端地址
-    placeholder: 说点什么吧！ # 空白评论框时显示的文字
+    placeholder: 留个言温暖一下博主！ # 空白评论框时显示的文字
     avatar: mp # 默认头像  › https://waline.js.org/guide/client/avatar.html
   # Giscus 选项 › https://giscus.app
   giscus:
