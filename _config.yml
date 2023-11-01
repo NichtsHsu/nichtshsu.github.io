@@ -13,35 +13,35 @@ timezone: Asia/Shanghai
 
 # jekyll-seo-tag 设置 › https://github.com/jekyll/jekyll-seo-tag/blob/master/docs/usage.md
 # --------------------------
-title: Nihil       # 主标题
+title: L1nwz1       # 主标题
 
-tagline: Nichts Hsu # 副标题
+tagline: 和我签订契约成为魔法少女吧！ # 副标题
 
 description: >- # 由 seo meta 和 atom feed 使用
-  Nichts Hsu 的个人博客
+  L1nwz1 的个人博客
 
 # 填入你的网站的协议和域名.
 # 例如，'https://username.github.io'，注意不要以 '/' 结尾。
-url: "https://nihil.cc"
+url: "https://L1nwz1.github.io"
 
 author: Nichts Hsu # 全名
 
 github:
-  username: NichtsHsu # Github 用户名
+  username: L1nwz1 # Github 用户名
 
 twitter:
-  username: NichtsHsu # 推特用户名
+  username: aa # 推特用户名aaa
 
 social:
   # 改为你的全名。
   # 这将会显示为帖子的默认作者以及页脚的版权所有者
-  name: Nichts Hsu
-  email: NichtsVonChaos@gmail.com # 邮箱地址
+  name: Kita Ikuyo
+  email: a2621481498@outlook.com # 邮箱地址
   links:
     # 第一个链接将会作为版权所有者的链接
-    - https://nihil.cc/
-    - https://twitter.com/NichtsHsu # 推特主页
-    - https://github.com/NichtsHsu # Github 主页
+    # https://nihil.cc/
+    # https://twitter.com/NichtsHsu # 推特主页
+    - https://github.com/L1nwz1 # Github 主页
     # 取消注释以添加更多链接
     # - https://www.facebook.com/username
     # - https://www.linkedin.com/in/username
@@ -67,10 +67,10 @@ google_analytics:
 theme_mode: # [light|dark]
 
 # 启用动画背景特效
-backgroud_animation: false
+backgroud_animation: true
 
 # 启用鼠标点击特效
-mouse_click_effect: false
+mouse_click_effect: true
 
 # 图像 CDN 端点。
 # 注意一旦被分配，CDN 网址会被加在
@@ -80,7 +80,7 @@ mouse_click_effect: false
 img_cdn: ""
 
 # 侧边栏的头像，支持本地或 CROS 资源
-avatar: /avatar.png
+avatar: /avatar.jpg
 
 # 设置显示右侧边栏的内容
 panel:
