@@ -92,7 +92,7 @@ panel:
     # 最近更新
     lastmod: true
     # 热门标签
-    trending_tags: false
+    trending_tags: true
     # 外部链接
     external_links: true
     # 目录
