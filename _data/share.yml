@@ -1,22 +1,6 @@
 #  帖子底部的分享选项。
 
 platforms:
-  - type: Twitter
-    icon: "icon-twitter"
-    link: "https://twitter.com/intent/tweet?text=TITLE&url=URL"
-
-  - type: Line
-    icon: "icon-13"
-    link: "https://lineit.line.me/share/ui?url=URL&text=TITLE"
-
-  - type: Facebook
-    icon: "icon-facebook"
-    link: "https://www.facebook.com/sharer/sharer.php?title=TITLE&u=URL"
-
-  - type: Telegram
-    icon: "icon-telegram"
-    link: "https://t.me/share/url?url=URL&text=TITLE"
-
   - type: QQ
     icon: "icon-QQ"
     link: "https://connect.qq.com/widget/shareqq/index.html?url=URL&title=TITLE"
@@ -28,3 +12,9 @@ platforms:
   - type: 微博
     icon: "icon-weibo"
     link: "https://service.weibo.com/share/share.php?title=TITLE&url=URL"
+
+  - type: Twitter
+    icon: "icon-twitter"
+    link: "https://twitter.com/intent/tweet?text=TITLE&url=URL"
+
+

@@ -24,13 +24,13 @@ description: >- # 由 seo meta 和 atom feed 使用
 # 例如，'https://username.github.io'，注意不要以 '/' 结尾。
 url: "https://L1nwz1.github.io"
 
-author: Nichts Hsu # 全名
+author: L1nwz1 # 全名
 
 github:
   username: L1nwz1 # Github 用户名
 
-twitter:
-  username: aa # 推特用户名aaa
+weibo:
+  username: 喜多kita-
 
 social:
   # 改为你的全名。
@@ -39,8 +39,6 @@ social:
   email: a2621481498@outlook.com # 邮箱地址
   links:
     # 第一个链接将会作为版权所有者的链接
-    # https://nihil.cc/
-    # https://twitter.com/NichtsHsu # 推特主页
     - https://github.com/L1nwz1 # Github 主页
     # 取消注释以添加更多链接
     # - https://www.facebook.com/username
