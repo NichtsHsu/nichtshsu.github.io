@@ -7,17 +7,17 @@
 #   automatic_name: true
 #   link: https://996.icu
 -
-  icon: "iconfont icon-cryo"
+  icon: icon-cryo
   use_iconfont: true
   name: 此博客的 Github 仓库
   link: https://github.com/L1nwz1/L1nwz1.github.io
 -
-  icon: "iconfont icon-geo"
+  icon: icon-geo
   use_iconfont: true
   name: 此博客的 Bilibili 主页
   link: https://space.bilibili.com/22519503
 -
-  icon: "iconfont icon-electro"
+  icon: icon-nihil-blog
   use_iconfont: true
   name: nihil的个人博客
   link: https://nihil.cc/
