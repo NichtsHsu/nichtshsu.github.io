@@ -1,6 +1,8 @@
-# -
-#   icon: 保存在 assets/img/subdomain 下的图标
-#   link: 子域名链接
-#   title: 标题
-#   description: >-
-#      描述
+-
+  icon: SnakeBot.ico
+  link: https://app3938.acapp.acwing.com.cn/pk/
+  title: Snake Bot
+  description: >-
+    介绍：基于Springboot和Vue3实现的双人蛇对战游戏(类似很早前的蛇蛇大作战io游戏)，使用Mysql作为数据库存储数据，创建2个微服务分别为匹配系统和Bot对战系统，玩家可以创建Bot来代替自己行动，Bot的命令由Java语言编写，后续可能会增加更多语言选项。同时游戏内增加了排行榜分数系统，可以增加对战乐趣。该项目学习自[Acwing](https://www.acwing.com/)的Springboot框架课。源项目地址：[snake_bot](https://github.com/L1nwz1/snake_bot)该项目作为个人练手学习项目，仅供学习和参考。
+    主要玩法：
+      玩家首先可以选择自己控制或者是Bot控制自己的蛇行走，游戏规则是每名玩家要避免撞到墙以及先碰到对手，先碰到墙或者对手的玩家判输。
