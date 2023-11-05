@@ -1,45 +1,39 @@
 <!-- The Footer -->
 
-<footer>
-  <script async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
-  <div class="container px-lg-4">
-    <div class="d-flex align-items-center text-muted mx-md-3" style="flex-direction:column;
-          justify-content:space-evenly;">
-      <div style="display: flex;">
-        <p>
-          {%- capture _platform -%}
-          <a href="https://jekyllrb.com" target="_blank" rel="noopener">Jekyll</a>
-          {%- endcapture -%}
+<footer aria-label="Site Info" class="
+    d-flex flex-column justify-content-center text-muted
+    flex-lg-row justify-content-lg-between align-items-lg-center pb-lg-3
+  ">
+  <p>
+    {{ '©' }}
+    <time>{{ 'now' | date: '%Y' }}</time>
+    <a href="{{ site.social.links[0] }}">{{ site.social.name }}</a>.
+    {% if site.data.locales[include.lang].copyright.brief %}
+    <span data-bs-toggle="tooltip" data-bs-placement="top"
+      title="{{ site.data.locales[include.lang].copyright.verbose }}">
+      {{- site.data.locales[include.lang].copyright.brief -}}
+    </span>
+    {% endif %}
+  </p>
 
-          {%- capture _theme -%}
-          <a href="https://github.com/cotes2020/jekyll-theme-chirpy" target="_blank" rel="noopener">Chirpy</a>
-          {%- endcapture -%}
-
-          {{ site.data.locales[include.lang].meta | replace: ':PLATFORM', _platform | replace: ':THEME',
-          _theme }}
-        </p>
-
-        <div>
-          <script async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
-          <span id="busuanzi_container_site_uv" style="display: inline; margin-right: 1rem;">
-            总访客数
-            <span id="busuanzi_value_site_uv"></span>
-            人。
-          </span>
-        </div>
-
-        <p>
-          {{| '©' }}
-          {{ 'now' | date: '%Y' }}
-          <a href="{{ site.social.links[0] }}">{{ site.social.name }}</a>.
-          {% if site.data.locales[include.lang].copyright.brief %}
-          <span data-bs-toggle="tooltip" data-bs-placement="top"
-            title="{{ site.data.locales[include.lang].copyright.verbose }}">
-            {{- site.data.locales[include.lang].copyright.brief -}}
-          </span>
-          {% endif %}
-        </p>
-      </div>
-    </div>
+  <div>
+    <script async src="https://busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+    <span id="busuanzi_container_site_uv" style="display: inline; margin-right: 1rem;">
+      总访客数
+      <span id="busuanzi_value_site_uv"></span>
+      人。
+    </span>
   </div>
+
+  <p>
+    {%- capture _platform -%}
+    <a href="https://jekyllrb.com" target="_blank" rel="noopener">Jekyll</a>
+    {%- endcapture -%}
+
+    {%- capture _theme -%}
+    <a href="https://github.com/cotes2020/jekyll-theme-chirpy" target="_blank" rel="noopener">Chirpy</a>
+    {%- endcapture -%}
+
+    {{ site.data.locales[include.lang].meta | replace: ':PLATFORM', _platform | replace: ':THEME', _theme }}
+  </p>
 </footer>
