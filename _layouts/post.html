@@ -69,15 +69,23 @@ tail_includes:
             {% endif %}
           </em>
         </span>
+
         <div>
           <!-- page views -->
           <span id="busuanzi_container_page_pv">
             阅读量:<span id="busuanzi_value_page_pv"></span>
           </span>
-          <!-- read time -->
+          {% if site.google_analytics.pv.proxy_endpoint or site.google_analytics.pv.cache_path %}
           <span>
-            {% include read-time.html content=content prompt=true lang=lang %}
+            <em id="pv" class="pageviews">
+              <i class="iconfont icon-spinner"></i>
+            </em>
+            {{ site.data.locales[lang].post.pageview_measure }}
           </span>
+          {% endif %}
+
+          <!-- read time -->
+          {% include read-time.html content=content prompt=true lang=lang %}
         </div>
 
       </div>
