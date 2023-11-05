@@ -45,14 +45,14 @@ ping {username}.github.io
 这都是接下来要用的，先别关闭leancloud页面。
 2. 打开[Vercel](https://vercel.com/)网页后选择Github登录，然后创建项目，再在项目中点击`Settings`配置一下`Environment Variables`.  
 Add 3个键值对(Key,Value),分别为:
-> LEAN_ID: AppID
-LEAN_KEY: AppKey
-LEAN_MASTER_KEY: MasterKey
+> LEAN_ID: AppID  
+LEAN_KEY: AppKey  
+LEAN_MASTER_KEY: MasterKey  
 
 其中`AppId`,`AppKey`,`MasterKey`分别为步骤1中leancloud所给的信息.
 3. 完成之后点击`Deployments`部署(`Redeploy`)一下项目,等待部署完成,会有一个app结尾的网站,即为部署后的服务端.但是很搞的是,点进去发现访问不了,刚开始我还以为是没部署成功,后来发现是正确的,只不过vercel被dns污染了,所以需要其他的步骤,接下来先在项目`Settings`中的Domains中添加一个域名,随便什么都行,最方便的是直接配置你购买的域名,比如说你买的域名是`asuka.com`,那你可以添加一个`waline.asuka.com`,vercel会提示你valid通过失败,然后按照他给你一段记录,填到Cloudflare的DNS解析中,一般来说是CNAME记录,名称为waline,内容为它提供给你的一段url.接下来回到vercel项目中,等待一会你会发现域名的验证通过了.
 4. 这时候马上用访问你刚刚填入的域名(比如上面的`waline.asuka.com`),可能能看到评论框的内容了,但是当你多次访问后可能还是不行(如果一直都可以的话跳过这一步).这里我想了半天为什么,后来发现是cloudflare的加密问题,进入cloudflare中的`SSL/TLS`的`概述`,将`加密模式`的`灵活`改为`完全`,就发现可以一直访问你配置的域名服务器了.
-5. 最后一步就是在你的网页`_config`中配置一下waline选项,按jerkll举例,进入`_config`文件后找到`comments:`,在`active:`后填入`"waline"`,然后在`waline:`的`server:`后输入刚刚自己创建的域名服务器地址,然后commit一下就可以重新构建博客了,过一会上去就可以看看你的评论功能上线了没有~
+5. 最后一步就是在你的网页`_config`中配置一下waline选项,按jerkll举例,进入`_config`文件后找到`comments:`,在`active:`后填入`"waline"`,然后在`waline:`的`server:`后输入刚刚自己创建的域名服务器地址,然后commit一下就可以重新构建博客了,过一会上去就可以看一下你的评论功能上线了没有~
 
 ## 小吐槽
-由于我个人也是第一次搭静态博客,这个经历也算是一波三折,不过总算是有点收获,在此和大家分享,希望大家不要踩我踩过的坑(有时候琢磨半天也想不出来真的很难受),之前研究Iconfont的时候半天找不到iconId在哪里,后来发现上传一份icon class就好了.
+由于我个人也是第一次搭静态博客,这个经历也算是一波三折,不过总算是有点收获,在此和大家分享,希望大家不要踩我踩过的坑(有时候琢磨半天也想不出来真的很难受),之前研究Iconfont的时候半天找不到iconId在哪里,后来发现上传一份icon class就好了,这种事果然是不经历过一遍是不会懂的啊.
