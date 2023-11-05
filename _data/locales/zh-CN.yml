@@ -44,8 +44,8 @@ copyright:
 meta: 本站采用 :PLATFORM 主题 :THEME
 
 not_found:
-  title: "404: 页面无法访问"
-  statment: 你似乎来到了没有知识存在的荒原
+  title: "404: 没有找到该页面哦"
+  statment: 前面的区域，以后再来探索吧~
   head_back: 去往首页
   or: 或者
   previous_page: 返回上页
