@@ -69,9 +69,15 @@ tail_includes:
             {% endif %}
           </em>
         </span>
+        <div>
+          <!-- page views -->
+          <span id="busuanzi_container_page_pv">
+            阅读量:<span id="busuanzi_value_page_pv"></span>
+          </span>
+          <!-- read time -->
+          {% include read-time.html content=content prompt=true lang=lang %}
+        </div>
 
-        <!-- read time -->
-        {% include read-time.html content=content prompt=true lang=lang %}
       </div>
       <!-- .d-flex -->
     </div>
