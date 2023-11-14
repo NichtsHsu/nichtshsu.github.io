@@ -38,21 +38,6 @@
 
   {{ seo_tags }}
 
-  <script type="text/x-mathjax-config">
-    MathJax.Hub.Config({ TeX: { equationNumbers: { autoNumber: "all" } } });
-    </script>
-
-    <script type="text/x-mathjax-config">
-    MathJax.Hub.Config({tex2jax: {
-             inlineMath: [ ['$','$'], ["\\(","\\)"] ],
-             processEscapes: true
-           }
-         });
-    </script>
-
-    <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript">
-    </script>
-
   <title>
     {%- unless page.layout == 'home' -%}
     {{ page.title | flatify | append: ' | '}}
@@ -60,6 +45,23 @@
     {{ site.title | flatify }}
   </title>
 
+  <script type="text/x-mathjax-config">
+    MathJax.Hub.Config({ TeX: { equationNumbers: { autoNumber: "all" } } });
+    </script>
+
+    <script type="text/x-mathjax-config">
+    MathJax.Hub.Config({tex2jax: {
+             inlineMath: [ ['$','$'], ["\\(","\\)"] ]
+             blockMath: [ ['$$', '$$'], ["\\[", "\\]"]]
+             processEscapes: true 
+           }
+         });
+    </script>
+
+    <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML" type="text/javascript">
+    </script>
+
+  
   {% include_cached favicons.html %}
 
   {% if site.resources.ignore_env != jekyll.environment and site.resources.self_hosted %}
