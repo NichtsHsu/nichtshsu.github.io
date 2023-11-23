@@ -20,7 +20,7 @@ tags: [网站,博客]     # TAG names should always be lowercase
 ping {username}.github.io
 ```
 即可返回类似如下信息:
-```
+```cmd
 正在 Ping xxx.github.io [xxx.xxx.xxx.xx] 具有 32 字节的数据:
 来自 xxx.xxx.xxx.xx 的回复: 时间=184ms
 来自 xxx.xxx.xxx.xx 的回复: 时间=183ms
