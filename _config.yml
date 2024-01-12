@@ -1,158 +1,154 @@
-# 网站设置
+# Website Settings
 
-# 导入主题
+# Import Theme
 theme: jekyll-theme-chirpy
 
-# 站点的语言 › https://www.w3.org/International/questions/qa-choosing-language-tags
-# 如果在文件夹 `_data/locales` 下存在同名文件，则布局语言也会改变，
-# 否则，布局语言使用默认值 'en'。
-lang: zh-CN
+# Site Language › https://www.w3.org/International/questions/qa-choosing-language-tags
+# If a file with the same name exists under the folder `_data/locales`, the layout language will also change,
+# Otherwise, the layout language uses the default value 'en'.
+lang: en
 
-# 修改为你的时区 › https://kevinnovak.github.io/Time-Zone-Picker
-timezone: Asia/Shanghai
+# Modify to your time zone › https://kevinnovak.github.io/Time-Zone-Picker
+timezone: America/Denver
 
-# jekyll-seo-tag 设置 › https://github.com/jekyll/jekyll-seo-tag/blob/master/docs/usage.md
+# jekyll-seo-tag Settings › https://github.com/jekyll/jekyll-seo-tag/blob/master/docs/usage.md
 # --------------------------
-title: Nihil       # 主标题
+title: Sindi      # Main Title
 
-tagline: Nichts Hsu # 副标题
+tagline: Every day is a chance to learn more. # Subtitle
 
-description: >- # 由 seo meta 和 atom feed 使用
-  Nichts Hsu 的个人博客
+description: >- # Used by seo meta and atom feed
+  Sindi's personal blog
 
-# 填入你的网站的协议和域名.
-# 例如，'https://username.github.io'，注意不要以 '/' 结尾。
-url: "https://nihil.cc"
+# Fill in the protocol and domain of your website.
+# For example, 'https://username.github.io', note not to end with '/'.
+url: "https://bandsind.github.io"
 
-author: Nichts Hsu # 全名
+author: Sindi Banda # Full name
 
 github:
-  username: NichtsHsu # Github 用户名
+  username: Bandsind # Github Username
 
-twitter:
-  username: NichtsHsu # 推特用户名
+#twitter:
+  #username: Bandas # Twitter Username
 
 social:
-  # 改为你的全名。
-  # 这将会显示为帖子的默认作者以及页脚的版权所有者
-  name: Nichts Hsu
-  email: NichtsVonChaos@gmail.com # 邮箱地址
+  # Change to your full name.
+  # This will be displayed as the default author of posts and the copyright owner in the footer
+  name: Sindi Banda
+  email: Sindikani321@gmail.com # Email Address
   links:
-    # 第一个链接将会作为版权所有者的链接
-    - https://nihil.cc/
-    - https://twitter.com/NichtsHsu # 推特主页
-    - https://github.com/NichtsHsu # Github 主页
-    # 取消注释以添加更多链接
+    # The first link will be used as the copyright owner's link
+    - https://sindi.cc
+    - https://github.com/Bandsind 
+    #- https://twitter.com/NichtsHsu # Twitter Homepage
+    # Github Homepage
+    # Uncomment to add more links
     # - https://www.facebook.com/username
     # - https://www.linkedin.com/in/username
 
-google_site_verification: # 填入你的认证字符串
+google_site_verification: # Enter your verification string
 
 # ↑ --------------------------
-# `jekyll-seo-tag` 设置结束
+# `jekyll-seo-tag` settings end
 
 google_analytics:
-  id: # 填入你的 Google Analytics ID
+  id: # Enter your Google Analytics ID
 
-# 设置首选配色方案
+# Set preferred color scheme
 #
-# 提示: 保留空白会跟随系统的默认首选配色，并且在侧边栏的底部会出现
-# 一个可以转换亮色主题和暗色主题的按钮。
+# Tip: Leaving blank will follow the system's default preferred color scheme, and a button to switch between light and dark themes will appear at the bottom of the sidebar.
 #
-# 可用选项:
+# Available options:
 #
-#     light  - 使用亮色方案
-#     dark   - 使用暗色方案
+#     light  - Use light scheme
+#     dark   - Use dark scheme
 #
 theme_mode: # [light|dark]
 
-# 启用动画背景特效
+# Enable animated background effect
 backgroud_animation: false
 
-# 启用鼠标点击特效
+# Enable mouse click effect
 mouse_click_effect: false
 
-# 图像 CDN 端点。
-# 注意一旦被分配，CDN 网址会被加在
-# 所有以 '/' 开始的图像（网站头像和帖子中的图像）路径上
+# Image CDN endpoint.
+# Note that once assigned, CDN URL will be added to
+# all images starting with '/' (website avatar and images in posts)
 # 
-# 例如，'https://cdn.com'
+# For example, 'https://cdn.com'
 img_cdn: ""
 
-# 侧边栏的头像，支持本地或 CROS 资源
+# Sidebar avatar, supports local or CROS resources
 avatar: /avatar.png
 
-# SEO `og:image` 元标记中使用的全站社交预览图像的 URL。
-# 可以在帖子的 Front Matter 中使用 `page.image` 覆盖。
-social_preview_image: # 字符串，本地或跨域资源
-
-# 设置显示右侧边栏的内容
+# Set content displayed on the right sidebar
 panel:
-  # 设置显示在帖子中右侧边栏的内容
+  # Set the content displayed in the right sidebar of posts
   # 
-  # 提示:
-  #   全局开关为 false 时必定不显示对应块。
-  #   全局开关为 true 时，可以在帖子的 md 文件头部使用形如:
+  # Tip:
+  #   Global switch to false will definitely not display the corresponding block.
+  #   Global switch to true allows turning off the right sidebar feature for individual posts using the md file header like:
   #      lastmod: false
-  #   的方式为该帖子单独关闭右侧边栏的功能。
+  #   for that post.
   post:
-    # 最近更新
+    # Recently Updated
     lastmod: true
-    # 热门标签
-    trending_tags: false
-    # 外部链接
+    # Trending Tags
+    trending_tags: true
+    # External Links
     external_links: true
-    # 目录
+    # Table of Contents
     toc: true
 
 comments:
-  active: # 帖子评论区全局开关，例如，'disqus'。保持为空表示禁用
-  # active 选项可以是如下：
-  # disqus 评论系统 > https://disqus.com/
+  active: # Global switch for post comments, for example, 'disqus'. Leave empty to disable
+  # The active option can be as follows:
+  # disqus commenting system > https://disqus.com/
   disqus:
-    shortname: # 填入你的 disqus shorname › https://help.disqus.com/en/articles/1717111-what-s-a-shortname
-  # utterances 评论系统 › https://utteranc.es/
+    shortname: # Enter your disqus shortname › https://help.disqus.com/en/articles/1717111-what-s-a-shortname
+  # utterances commenting system › https://utteranc.es/
   utterances:
-    repo: # <Github 用户名>/<仓库名>
-    issue_term: # < 链接 | 路径 | 标题 | ...>
-  # Waline 评论系统 › https://waline.js.org/
+    repo: # <Github Username>/<Repository Name>
+    issue_term: # < Link | Path | Title | ...>
+  # Waline commenting system › https://waline.js.org/
   waline:
-    server: # Vercal 服务端地址
-    placeholder: 说点什么吧！ # 空白评论框时显示的文字
-    avatar: mp # 默认头像  › https://waline.js.org/guide/client/avatar.html
-  # Giscus 选项 › https://giscus.app
+    server: # Vercal server address
+    placeholder: Say something! # Text displayed when the comment box is empty
+    avatar: mp # Default avatar  › https://waline.js.org/guide/client/avatar.html
+  # Giscus options › https://giscus.app
   giscus:
-    repo: # <Github 用户名>/<仓库名>
+    repo: # <Github Username>/<Repository Name>
     repo_id:
     category:
     category_id:
-    mapping: # 可选项，默认为 'pathname'
-    input_position: # 可选项，默认为 'bottom'
-    lang: # 可选项，默认为 `site.lang` 的值
-    reactions_enabled: # 可选项，默认为 1
+    mapping: # Optional, default is 'pathname'
+    input_position: # Optional, default is 'bottom'
+    lang: # Optional, default is `site.lang` value
+    reactions_enabled: # Optional, default is 1
 
-# 自托管静态资产，可选 › https://github.com/cotes2020/chirpy-static-assets
+# Self-host static assets, optional › https://github.com/cotes2020/chirpy-static-assets
 assets:
   self_host:
-    enabled: # 布尔值, 置空表示否
-    # 指定 Jekyll 环境，置空意味着都启用
-    # 仅在 `assets.self_host.enabled` 为 'true' 时生效
+    enabled: # Boolean, empty means no
+    # Specify Jekyll environment, empty means all are enabled
+    # Only effective when `assets.self_host.enabled` is 'true'
     env: # [development|production]
 
 pwa:
-  enabled: true # PWA 特性选项
+  enabled: true # PWA feature option
 
-# 每一页的帖子数量
+# Number of posts per page
 paginate: 10
 
-# 网站的基础 URL
+# Base URL of the website
 baseurl: ""
 
-# ------------ 下面的设置不建议修改 ------------------
+# ------------ Below settings are not recommended to modify ------------------
 
 kramdown:
   syntax_highlighter: rouge
-  syntax_highlighter_opts: # Rouge 设置 › https://github.com/jneen/rouge#full-options
+  syntax_highlighter_opts: # Rouge settings › https://github.com/jneen/rouge#full-options
     css_class: highlight
     # default_lang: console
     span:
@@ -168,19 +164,19 @@ collections:
 
 defaults:
   - scope:
-      path: "" # 空字符串意味着项目里的所有文件
+      path: "" # An empty string means all files in the project
       type: posts
     values:
       layout: post
-      comments: true # 在帖子中启用评论
-      # 右侧边栏的默认显示
+      comments: true # Enable comments in posts
+      # Default display for the right sidebar
       lastmod: true
       trending_tags: true
       external_links: true
       toc: true
       license: true
-      # 不要改变它除非你是 Jekyll 以及 Web 开发的专家，
-      # 或者你认为自己足够聪明可以在此模板中修改为其他的相对路径。
+      # Don't change it unless you are an expert in Jekyll and Web development,
+      # or you think you are smart enough to modify it to another relative path in this template.
       permalink: /posts/:title/
   - scope:
       path: _drafts
@@ -188,7 +184,7 @@ defaults:
       comments: false
   - scope:
       path: ""
-      type: tabs # 参考 `site.collections`
+      type: tabs # Refer to `site.collections`
     values:
       layout: page
       permalink: /:title/

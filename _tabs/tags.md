@@ -1,6 +1,6 @@
 ---
 layout: tags
-title: 标签
+title: tags
 icon: icon-tag
 order: 3
 ---
