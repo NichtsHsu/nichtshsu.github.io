@@ -12,9 +12,9 @@ tags: [c++, 编程语言, c++20]     # TAG names should always be lowercase
 
 ## 重载决议
 
-重载决议（Overload Resolution）的定义，摘自 [cppreference](https://zh.cppreference.com/w/cpp/language/overload_resolution):
+重载决议（Overload Resolution）的定义，摘自 [cppreference](https://en.cppreference.com/w/cpp/language/overload_resolution.html):
 
-> 为了编译函数调用，编译器必须首先进行[名字查找](https://zh.cppreference.com/w/cpp/language/lookup)，对于函数可能涉及[实参依赖查找](https://zh.cppreference.com/w/cpp/language/adl)，而对于函数模板可能后随[模板实参推导](https://zh.cppreference.com/w/cpp/language/template_argument_deduction)。如果这些步骤产生了多个候选函数，那么需要进行重载决议选择将要实际调用的函数。
+> 为了编译函数调用，编译器必须首先进行[名字查找](https://en.cppreference.com/w/cpp/language/lookup.html)，对于函数可能涉及[实参依赖查找](https://en.cppreference.com/w/cpp/language/adl.html)，而对于函数模板可能后随[模板实参推导](https://en.cppreference.com/w/cpp/language/template_argument_deduction.html)。如果这些步骤产生了多个候选函数，那么需要进行重载决议选择将要实际调用的函数。
 
 说人话就是，由于 C++ 支持函数重载、隐式类型转换、模板函数等特性，因此一个函数调用可能可以匹配上多个函数实现，编译器需要通过一些规则来选择一个最优实现参与编译。
 

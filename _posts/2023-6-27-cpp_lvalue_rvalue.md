@@ -122,7 +122,7 @@ void test2() {
 * `a.m`{:.language-cpp} 当 `a` 是亡值且 `m` 是非引用类型且非静态成员时为亡值（就是类型不是 `T&` 或者 `T&&` 或者带 `static` 的成员）。
 * `a.*mp`{:.language-cpp} 当 `a` 是亡值时。
 
-需要注意的是，在 [cppreference](https://zh.cppreference.com/w/cpp/language/value_category) 中，后三条中的“亡值”被替换为了“右值”（即“亡值”加上“纯右值”），但这并不是谁写错了或者出现了纰漏，根据《[C++ International Standard 2020 edtion](https://www.open-std.org/jtc1/sc22/wg21/docs/papers/2020/n4849.pdf)》描述，纯右值具有以下性质：
+需要注意的是，在 [cppreference](https://en.cppreference.com/w/cpp/language/value_category.html) 中，后三条中的“亡值”被替换为了“右值”（即“亡值”加上“纯右值”），但这并不是谁写错了或者出现了纰漏，根据《[C++ International Standard 2020 edtion](https://www.open-std.org/jtc1/sc22/wg21/docs/papers/2020/n4849.pdf)》描述，纯右值具有以下性质：
 
 > Whenever a prvalue appears as an operand of an operator that expects a glvalue for that operand, the temporary materialization conversion is applied to convert the expression to an xvalue.
 >
@@ -374,7 +374,7 @@ class MyResources {
 };
 ```
 
-在 C++23 中更进一步的提出了 [deducing this](https://zh.cppreference.com/w/cpp/language/member_functions#.E6.98.BE.E5.BC.8F.E5.AF.B9.E8.B1.A1.E5.BD.A2.E5.8F.82) 语法，可以显式指定对象的形参类型：
+在 C++23 中更进一步的提出了 [deducing this](https://en.cppreference.com/w/cpp/language/member_functions.html#Explicit_object_member_functions) 语法，可以显式指定对象的形参类型：
 
 ```cpp
 #include <vector>
@@ -403,4 +403,4 @@ class MyResources {
 
 [C++ International Standard 2020 edtion](https://www.open-std.org/jtc1/sc22/wg21/docs/papers/2020/n4849.pdf)
 
-[cppreference](https://zh.cppreference.com/)
+[cppreference](https://en.cppreference.com/)

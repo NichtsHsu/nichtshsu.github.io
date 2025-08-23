@@ -1066,6 +1066,6 @@ auto curry(Curried<CurriedArgsList...> &&curried, Args &&...args) {
 
 GCC 标准库源码
 
-[cppreference](https://en.cppreference.com/w/)
+[cppreference](https://en.cppreference.com/)
 
 [details of std::make_index_sequence and std::index_sequence - stack overflow](https://stackoverflow.com/questions/49669958/details-of-stdmake-index-sequence-and-stdindex-sequence)
